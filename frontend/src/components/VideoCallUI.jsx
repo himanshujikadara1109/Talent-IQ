@@ -41,6 +41,9 @@ function VideoCallUI({ chatClient, channel }) {
               {participantCount} {participantCount === 1 ? "participant" : "participants"}
             </span>
           </div>
+
+
+          
           {chatClient && channel && (
             <button
               onClick={() => setIsChatOpen(!isChatOpen)}
@@ -51,7 +54,9 @@ function VideoCallUI({ chatClient, channel }) {
               Chat
             </button>
           )}
+        
         </div>
+        
 
         <div className="flex-1 bg-base-300 rounded-lg overflow-hidden relative">
           <SpeakerLayout />
